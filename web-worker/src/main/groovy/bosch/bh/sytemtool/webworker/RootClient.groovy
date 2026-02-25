@@ -5,7 +5,7 @@ import io.micronaut.http.annotation.Body
 import io.micronaut.http.annotation.Post
 import io.micronaut.http.client.annotation.Client
 
-@Client("unix:///tmp/root.sock")
+@Client(id = "root-worker")
 interface RootClient {
     @Post("/root/execute")
     String callRoot(@Body ExecuteRequest request)
