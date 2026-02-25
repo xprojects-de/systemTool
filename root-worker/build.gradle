@@ -21,6 +21,9 @@ dependencies {
     compileOnly("io.micronaut.serde:micronaut-serde-processor")
     runtimeOnly("ch.qos.logback:logback-classic")
     testImplementation("io.micronaut:micronaut-http-client")
+    implementation("io.micronaut:micronaut-http-server-netty")
+    implementation("io.netty:netty-transport-native-unix-common")
+    implementation("io.netty:netty-transport-native-epoll:linux-x86_64")
 }
 
 
