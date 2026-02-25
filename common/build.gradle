@@ -1,0 +1,23 @@
+plugins {
+    id("groovy")
+    id("io.micronaut.library") version "4.6.1"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("io.micronaut.groovy:micronaut-runtime-groovy")
+    implementation("io.micronaut.serde:micronaut-serde-jackson")
+    compileOnly("io.micronaut.serde:micronaut-serde-processor")
+}
+
+micronaut {
+    processing {
+        incremental true
+        annotations "bosch.bh.sytemtool.common*"
+    }
+}
+
+

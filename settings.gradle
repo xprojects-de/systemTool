@@ -1,0 +1,6 @@
+rootProject.name="SystemTool"
+
+include("common")
+include("root-worker")
+include("web-worker")
+
