@@ -1,4 +1,4 @@
-package bosch.bh.sytemtool.webworker
+package bosch.bh.sytemtool.rootworker
 
 import bosch.bh.sytemtool.common.GreetingService
 import io.micronaut.http.annotation.Controller
