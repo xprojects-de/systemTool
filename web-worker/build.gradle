@@ -25,7 +25,7 @@ dependencies {
 
 
 application {
-    mainClass = "bosch.bh.sytemtool.Application"
+    mainClass = "bosch.bh.sytemtool.webworker.Application"
 }
 
 graalvmNative.toolchainDetection = false
