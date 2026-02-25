@@ -3,3 +3,4 @@
 /.gradle/
 /.idea/
 /web-worker/build/
+/root-worker/build/
